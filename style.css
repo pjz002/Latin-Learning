@@ -1,0 +1,140 @@
+.sidenav header {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  line-height: 70px;
+  text-shadow: 5px 5px 5px black;
+  background-color: gray;
+}
+.sidenav header:hover {
+  color: red;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: -22px;
+  left: -250px;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: all .5s ease;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  text-shadow: 2px 2px 2px blue;
+}
+
+.sidenav a:hover {
+  color: orange;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+#CategoriesToggle:Checked ~ .sidenav{
+  left: 0;
+}
+#CategoriesToggle:Checked ~ .main{
+  margin-left: 150px;
+}
+#CategoriesToggle {
+  display: none;
+}
+#CategoriesToggle:Checked ~ label #NavOpen{
+  margin-left: 150px;
+  opacity: 0;
+  visibility: hidden;
+}
+label #NavOpen {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+label #NavClose {
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 0px; /* Same as the width of the sidenav */
+  font-size: 100px; /* Increased text to enable scrolling */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#pic1 {
+  width:600px;
+  height:500px;
+  border-style: solid;
+  border-color: black;
+}
+#1 {
+  text-align:right;
+}
+#table2{
+  border: 1px solid black;
+  width: 50%;
+  border-collapse: collapse;
+  background-color: skyblue;
+}
+p{
+  white-space: pre;
+}
+h1{
+  text-align: center;
+  font-size: 100px;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+}
+h3 {
+  padding: 25px;
+  background-color: gray;
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 50px;
+  text-shadow: 4px 4px 4px black, 2px 2px 2px white;
+}
+
+.TableType2{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.TableType2 td, .TableType2 th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.TableType2 tr:nth-child(even){background-color: #c7c7c7;}
+.TableType2 tr:nth-child(odd){background-color: white;}
+
+.TableType2 tr:hover {background-color: orange;}
+
+.TableType2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: lightblue;
+}
+.Declensions_Table2 {
+  padding: 8px;
+  background-color: white;
+  border-collapse: collapse;
+}
+.Declensions_Table2 tr:nth-child(even){background-color: #c7c7c7;}
+.Declensions_Table2 tr:nth-child(odd){background-color: white;}
+
+.Declensions_Table2 tr:hover {background-color: orange;}
