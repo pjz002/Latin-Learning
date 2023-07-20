@@ -92,6 +92,9 @@ p{
 h1{
   text-align: center;
   font-size: 100px;
+  color: deeppink;
+  text-shadow: 8px 8px 8px lightskyblue;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 h2{
   text-align: center;
